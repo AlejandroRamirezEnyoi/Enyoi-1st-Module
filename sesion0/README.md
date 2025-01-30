@@ -1,7 +1,7 @@
 # Fundamentos basicos
 
 ## 1. Conceptos basicos
-### 1.1. ¿Que es un lenguaje de programcaión?
+### 1.1. ¿Que es un lenguaje de programación?
 ✅ Un lenguaje de programación es un conjunto de reglas y símbolos que permiten a los programadores dar instrucciones a una computadora. Estas instrucciones se escriben en un formato que la computadora puede entender, pero que también es fácil de leer y entender para los humanos.
 
 ejemplo:
