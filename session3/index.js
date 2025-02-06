@@ -52,10 +52,11 @@ let carRed = new Car("rojo", 1600)
 carGreen.color
 carRed.run(80)
 
-console.log(typeof(carGreen))
-let arrayNumbers = [1,5,6,2]
+console.log(typeof(carGreen)) //object
 
-arrayNumbers.push(7)
+let arrayNumbers = [1,5,6,2] //crear array de numeros
+
+arrayNumbers.push(7) // llamar al METODO push del array para añdair un 7 al final
 console.log(arrayNumbers);
 
 let prhase = "mi casa es bonita"
