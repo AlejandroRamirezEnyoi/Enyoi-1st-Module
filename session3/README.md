@@ -72,14 +72,14 @@ class Persona {
 	} 
 }
 
-let juan = new Persona("Juan", 30)
-juan.saludar()// Hola, soy Juan y tengo 30 años. 
+let persona1 = new Persona("Juan", 30)
+persona1.saludar()// Hola, soy Juan y tengo 30 años. 
 ```
 
 📌 Modificación de propiedades
 ```js 
-juan.edad = 31 // Cambiar edad 
-console.log(juan.edad) // 31 
+jpersona1.edad = 31 // Cambiar edad 
+console.log(persona1.edad) // 31 
 ```
 
 📌 Métodos con parámetros
