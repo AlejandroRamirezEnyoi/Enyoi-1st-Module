@@ -14,7 +14,7 @@ class Animal {
 	}
 
 	hacerSonido() {
-		console.log(${this.nombre} hace un sonido.)
+		console.log(`${this.nombre} hace un sonido.`)
 	}
 }
 
