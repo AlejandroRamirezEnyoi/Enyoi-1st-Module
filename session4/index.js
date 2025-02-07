@@ -56,7 +56,7 @@
 // sonar(miPerrito)// miPerrito.hacerSonido()
 // sonar(unGatico)// unGatico.hacerSonido()
 // ladrar(unPerrito)
-
+//---------------------------------------------------------------------------------------
 // class Vehiculo {
 // 	moverse() {
 // 		console.log("El vehículo se está moviendo.")
@@ -95,27 +95,55 @@
 
 // miCuatrimoto.moverse()
 // cuatrimoto2.moverse()
+//---------------------------------------------------------------------------------------------
+// class Motor {
+// 	constructor(numeroPistones, cubicaje, fechaDeFabricacion, material, configuracion){
+// 		this.numeroPistones = numeroPistones
+// 		this.cubicaje = cubicaje
+// 		this.fechaDeFabricacion = fechaDeFabricacion
+// 		this.material = material
+// 		this.configuracion = configuracion
+// 	}
+// 	encender() {
+// 		console.log("Motor encendido.")
+// 	}
+// }
 
-class Motor {
-	constructor(numeroPistones, cubicaje, fechaDeFabricacion, Material){
-		this.numeroPistones = numeroPistones
-		this.cubicaje = cubicaje
-	}
-	encender() {
-		console.log("Motor encendido.")
+// class Coche {
+// 	constructor(motor) {
+// 		this.motor = motor
+// 	}
+
+// 	arrancar() {
+// 		this.motor.encender()
+// 	} 
+// }
+
+// let miMotor = new Motor()
+// let auto = new Coche(miMotor) // Se inyecta la dependencia desde fuera 
+// auto.arrancar() // Motor encendido. 
+//-------------------------------------------------------------------------------
+class Celular{
+	constructor(display, sistemaCarga, modelo){
+		this.display = display
+		this.sistemaCarga = sistemaCarga
+		this.modelo = modelo
 	}
 }
 
-class Coche {
-	constructor() {
-		this.motor = new Motor(6, 2000)  
+class Display {
+	constructor(tamaño){
+		this.tamaño = tamaño
 	}
-
-	arrancar() {
-		this.motor.encender()
-	} 
 }
 
-let miMotor = new Motor()
-let auto = new Coche(miMotor) // Se inyecta la dependencia desde fuera 
-auto.arrancar() // Motor encendido. 
+class SistemaCarga {
+
+}
+
+let display1 = new Display("15in")
+let sistemaCarga1 = new SistemaCarga()
+let display2 = new Display("3in")
+
+let n1100 = new Celular(display1, sistemaCarga1, 1100)
+let a2 = new Celular(display2, sistemaCarga1, "A2")
