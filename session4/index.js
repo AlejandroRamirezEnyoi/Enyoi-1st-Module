@@ -123,27 +123,69 @@
 // let auto = new Coche(miMotor) // Se inyecta la dependencia desde fuera 
 // auto.arrancar() // Motor encendido. 
 //-------------------------------------------------------------------------------
-class Celular{
-	constructor(display, sistemaCarga, modelo){
-		this.display = display
-		this.sistemaCarga = sistemaCarga
-		this.modelo = modelo
+// class Celular{
+// 	constructor(display, sistemaCarga, modelo){
+// 		this.display = display
+// 		this.sistemaCarga = sistemaCarga
+// 		this.modelo = modelo
+// 	}
+// 	cambiarDisplay(newDisplay){
+// 		this.display= newDisplay
+// 	}
+// }
+
+// class Display {
+// 	constructor(tamaño,tipo){
+// 		this.tamaño = tamaño
+// 		this.tipo = tipo
+// 	}
+// }
+
+// class Pantalla {
+// 	constructor(tipo){
+// 		this.tipo = tipo
+// 	}
+// }
+
+// class SistemaCarga {
+
+// }
+
+// let pantalla = new Pantalla("LCD")
+
+// let display1 = new Display("15in")
+// let sistemaCarga1 = new SistemaCarga()
+// let display2 = new Display("3in")
+
+// let n1100 = new Celular(pantalla, sistemaCarga1, 1100)
+// let a2 = new Celular(display2, sistemaCarga1, "A2")
+
+// let display3 = new Display("10in", "touch")
+// n1100.cambiarDisplay(display3)
+
+
+let carrito = {
+	motor: 1000,
+	color: "rojo",
+	noPuertas: 5,
+	marca: "ford",
+	modelo: 1958
+} 
+
+console.log(carrito.modelo)
+
+let user = {
+	userName: "alejo",
+	password: 123456
+}
+
+if(user.userName === "alejoo"){
+	if(user.password ===123456){
+		console.log("correcto");
 	}
+	else
+		console.log("Password not allowed");
 }
-
-class Display {
-	constructor(tamaño){
-		this.tamaño = tamaño
-	}
-}
-
-class SistemaCarga {
-
-}
-
-let display1 = new Display("15in")
-let sistemaCarga1 = new SistemaCarga()
-let display2 = new Display("3in")
-
-let n1100 = new Celular(display1, sistemaCarga1, 1100)
-let a2 = new Celular(display2, sistemaCarga1, "A2")
+else
+	console.log("User not allowed");
+	
