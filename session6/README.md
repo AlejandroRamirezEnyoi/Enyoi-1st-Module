@@ -15,7 +15,7 @@ Permiten la concurrencia, es decir, múltiples usuarios pueden acceder a los dat
 ```plaintext
  Tabla: Clientes
 ID	Nombre	Email
-1	Ana	ana@mail.com
+1	Ana	 	ana@mail.com
 2	Pedro	pedro@mail.com
 ```		
 ## 🔹 2. Tipos de Bases de Datos
@@ -29,7 +29,10 @@ Las bases de datos se pueden clasificar en varios tipos según su estructura y c
 
 📌 Ejemplo de base de datos relacional (MySQL):
 ```sql
- CREATE TABLE Clientes ( ID INT PRIMARY KEY, Nombre VARCHAR(50), Email VARCHAR(100) ); INSERT INTO Clientes (ID, Nombre, Email) VALUES (1, 'Ana', 'ana@mail.com'); 
+ CREATE TABLE Clientes ( ID INT PRIMARY KEY, Nombre VARCHAR(50), Email VARCHAR(100) unique ); 
+ INSERT INTO Clientes (ID, Nombre, Email) VALUES (1, 'Ana', 'ana@mail.com');
+ INSERT INTO Clientes (ID, Nombre, Email) VALUES (2, 'Ana', 'ana1@mail.com');
+ INSERT INTO Clientes (ID, Nombre, Email) VALUES (3, 'Ana', 'ana2@mail.com'); 
  ```
 
 📌 2. Bases de Datos No Relacionales (NoSQL)
@@ -66,13 +69,13 @@ Columnar	Datos almacenados en columnas en lugar de filas.	Apache Cassandra
 ``` plaintext 
 Tabla: Empleados
 ID	Nombre	Departamento
-1		Juan		IT
-2		María		Ventas
+1	Juan	IT
+2	María	Ventas
 
 Tabla: Departamentos
 ID	Nombre
-1		IT
-2		Ventas
+1	IT
+2	Ventas
 ```	
 📌 Ejemplo de modelo documental (MongoDB):
 ```json 
